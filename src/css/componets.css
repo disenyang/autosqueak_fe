@@ -1,0 +1,413 @@
+/* header */
+header .head {
+	width: 100%;
+	text-align: center;
+	font-size: 0.13rem;
+	background-color: #FFC008;
+	line-height: 0.34rem;
+	position: relative;
+	z-index: 2;
+}
+
+header .header {
+	width: 100%;
+	color: #000;
+	font-size: 0.13rem;
+	position: relative;
+	padding: 0 0.5rem;
+}
+
+header .logo {
+	width: 1.7rem;
+	height: 0.52rem;
+	background: url(/img/index/logo.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+header .shop {
+	margin-right: 0.2rem;
+}
+
+header .shopTwo {
+	display: none;
+}
+
+header .search {
+	width: 0.24rem;
+	height: 0.24rem;
+	margin-right: 0.1rem;
+	cursor: pointer;
+}
+
+header .ipt {
+	border-bottom: 0.02rem solid #000;
+}
+
+header .box {
+	width: 0.18rem;
+	height: 0.2rem;
+}
+
+header .round-num {
+	position: absolute;
+	bottom: -30%;
+	left: 50%;
+	min-width: 0.18rem;
+	min-height: 0.18rem;
+	border-radius: 0.18rem;
+	background-color: #87CAD2;
+	text-align: center;
+	line-height: 0.18rem;
+	padding: 1px 8px;
+}
+
+header .all {
+
+	/* margin-left: 0.2rem; */
+	display: none;
+	cursor: pointer;
+}
+
+header .all img {
+	width: 0.6rem;
+	height: 0.6rem;
+	object-fit: contain;
+}
+
+header .imgUl {
+	height: 428px;
+	line-height: initial;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 999;
+	padding: 0.3rem 0;
+	display: none;
+}
+
+header .carui_box {
+	width: 18%;
+	height: 1.6rem;
+	margin: 1%;
+	position: relative;
+	cursor: pointer;
+}
+
+header .carUi {
+	width: 100%;
+	height: 100%;
+}
+
+header .carName {
+	position: absolute;
+	top: 33%;
+	left: 27%;
+	color: #fff;
+	font-size: 0.2rem;
+	font-weight: 600;
+	text-align: center;
+	z-index: 999;
+}
+
+header .mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(1, 1, 1, 0.2);
+	z-index: 10;
+	display: none;
+}
+
+header .right-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	width: 55%;
+	background-color: #87cad2;
+	font-size: 0.27rem;
+	padding: 0.2rem 0 0 0.5rem;
+	line-height: 0.6rem;
+	display: none;
+	overflow-y: auto;
+}
+
+header .line {
+	width: 80%;
+	height: 0.04rem;
+	margin: 0.4rem 0;
+	background-color: #fff;
+}
+
+header .mask_bottom {
+	color: #000;
+}
+
+header .mask_bottom a {
+	color: #000;
+	display: block;
+}
+
+header .mask_search {
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-top: 0.3rem;
+}
+
+header .mask_ipt {
+	padding-bottom: 0.44rem;
+	width: 50%;
+	margin-left: 0.3rem;
+	border-bottom: 0.04rem solid #333;
+	background-color: #87cad2;
+}
+
+header .shopContent {
+	cursor: pointer;
+}
+
+header .down {
+	width: 0.14rem;
+	height: 0.14rem;
+	margin-left: 0.04rem;
+	transition: 0.3s;
+	transform: rotate(180deg);
+}
+
+header .down-y {
+	display: none;
+	width: 0.14rem;
+	height: 0.14rem;
+	margin-left: 0.04rem;
+	transition: 0.3s;
+	transform: rotate(180deg);
+}
+
+header .nav-item {
+	cursor: pointer;
+	color: #333333;
+}
+
+header .nav-item a {
+	color: #333333;
+}
+
+header .nav-item.active,
+header .nav-first.active {
+	color: #FFC008;
+}
+
+header .nav-item.active a,
+header .nav-first.active a {
+	color: #FFC008;
+}
+
+header .nav-first.active .down-y {
+	display: block;
+}
+
+header .nav-first.active .down {
+	display: none;
+}
+
+header .shop-nav:hover .down,
+header .shop-nav:hover .down-y {
+	transform: rotate(0);
+}
+
+header .toggle-wrap {
+	width: 3rem;
+	height: 0.4rem;
+	/* background-color: #FFC008; */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 0.1rem;
+	overflow: hidden;
+	display: flex;
+}
+
+header .toggle-wrap>div {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 0.18rem;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1080px) {
+
+	header .shop,
+	header .search,
+	header .ipt {
+		display: none;
+	}
+
+	header .all {
+		display: block;
+	}
+
+	header .all img {
+		width: 0.4rem;
+		height: 0.4rem;
+		margin-left: 0.2rem;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	header .head {
+		font-size: 0.28rem;
+		line-height: 0.7rem;
+	}
+
+	header .header {
+		font-size: 0.2rem;
+		padding: 0.2rem 0.5rem;
+	}
+
+	header .logo {
+		width: 3rem;
+		height: 0.96rem;
+	}
+
+	header .box {
+		width: 0.3rem;
+		height: 0.34rem;
+		margin-right: 0.2rem;
+	}
+
+	header .round-num {
+		position: absolute;
+		bottom: -30%;
+		left: 20%;
+		min-width: 0.3rem;
+		min-height: 0.3rem;
+		border-radius: 0.3rem;
+		line-height: 0.3rem;
+	}
+}
+
+/* footer */
+footer .bottom {
+	width: 100%;
+	text-align: center;
+	background-color: #192b2d;
+	padding: 0.4rem 0;
+	font-size: 0.14rem;
+}
+
+footer .botmImg {
+	width: 1rem;
+}
+
+footer .btmUl {
+	margin: 0.3rem 0.1rem 0.14rem 0.1rem;
+	cursor: pointer;
+}
+
+footer .foot {
+	background-color: #3f757b;
+	text-align: center;
+	padding: 0.16rem 0;
+	font-size: 0.15rem;
+}
+
+@media screen and (max-width: 640px) {
+	footer .bottomBox {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	footer .bottom {
+		font-size: 0.28rem;
+		padding-bottom: 1rem;
+	}
+
+	footer .btmUl {
+		margin: 0.3rem 0.3rem 0rem 0.3rem;
+		line-height: 0.18rem;
+	}
+
+	footer .bottomBox {
+		margin-bottom: 0.3rem;
+	}
+
+	footer .botmImg {
+		width: 2.4rem;
+		margin: 0.6rem 0 0.3rem 0;
+	}
+
+	footer .foot {
+		padding: 0.5rem 0.54rem;
+		font-size: 0.28rem;
+	}
+}
+
+.f-loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255,255,255, .5);
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.f-loading .loading {
+	width: 3px;
+	height: 3px;
+	border-radius: 100%;
+	z-index: 999;
+	margin-bottom: 30px;
+	/* 圆角 */
+	box-shadow: 0 -10px 0 1px rgb(92, 133, 139),
+		/* 上, 1px 扩展 */
+		10px 0px rgb(92, 133, 139),
+		/* 右 */
+		0 10px rgb(92, 133, 139),
+		/* 下 */
+		-10px 0 rgb(92, 133, 139),
+		/* 左 */
+
+		-7px -7px 0 .5px rgb(92, 133, 139),
+		/* 左上, 0.5px扩展 */
+		7px -7px 0 1.5px rgb(92, 133, 139),
+		/* 右上, 1.5px扩展 */
+		7px 7px rgb(92, 133, 139),
+		/* 右下 */
+		-7px 7px rgb(92, 133, 139);
+	/* 左下 */
+}
+
+.f-loading .spin {
+	animation: spin 1s steps(8) infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg) scale(1.8);
+	}
+
+	to {
+		transform: rotate(360deg) scale(1.8);
+	}
+}
